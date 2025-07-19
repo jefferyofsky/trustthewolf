@@ -28,38 +28,52 @@
             color: #ccffcc;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
-        .container {
-            padding: 50px 20px;
+        .split-container {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 100vh;
         }
-        img {
-            max-width: 300px;
-            height: auto;
+        .half {
+            flex: 1;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+        .left {
+            background-color: #0a100d;
+            border-right: 1px solid #0f1f1c;
+        }
+        .right {
+            background-color: #0f1f1c;
         }
         h1 {
-            font-size: 32px;
+            font-size: 28px;
             color: #99ff99;
             text-transform: uppercase;
             margin-bottom: 10px;
+            text-align: center;
         }
         p {
             font-size: 16px;
             color: #c8facc;
             line-height: 1.5;
+            text-align: center;
         }
         .info-box {
             background-color: #122014;
             border: 2px solid #00ff99;
             padding: 20px;
             margin: 20px auto;
-            width: 400px;
-            max-width: 95%;
+            width: 90%;
+            max-width: 500px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 255, 128, 0.2);
         }
-        .footer {
-            margin-top: 40px;
+        img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 300px;
+            height: auto;
         }
         a {
             color: #66ffcc;
@@ -68,34 +82,41 @@
         a:hover {
             text-decoration: underline;
         }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Trust The Wolf Tech Services</h1>
-        <img src="https://uploader.irys.xyz/jkNp4hq5bGLWVwXfnoLhodjfZontyqyTLPXX34UhAkZ" alt="Trust The Wolf Logo">
-        <div class="info-box">
-           <p>Home of the Trust The Wolf Tech services page, where you get the help when you need it.</p>
-        </div>
-        
-        <br/>
-        <h1>Trust The Wolf Meme Coin ($TWOLF)</h1>        
-        <img src="https://gateway.irys.xyz/CM5NYjHVwXqJ1vFGUP3g5J3EP4KkqhvQayKPFoKXpuAB" alt="$TWOLF Logo">        
-        <div class="info-box">
-            <p><strong>$TWOLF is your digital brotherhood — for the ones who knew what a jumper pin was, who coded in hex, and kept the world running behind the scenes. Not trendy. Not shiny. Just wise, capable, and ready for anything.</p>           
-            <p><strong>Mint:</strong><br>
-            <a href="https://explorer.solana.com/address/qdvrrpPCjbZoHi4PFrq1z1v16bbYjpzH8Fudzg9iYZq" target="_blank">
-                qdvrrpPCjbZoHi4PFrq1z1v16bbYjpzH8Fudzg9iYZq
-            </a></p>
-
-            <p><strong>Supply:</strong> 333,000,000 TWOLF</p>
-            <p><strong>Decimals:</strong> 6</p>
-
+    <div class="split-container">
+        <div class="half left">
+            <h1>Trust The Wolf Tech Services</h1>
+            <img src="https://uploader.irys.xyz/jkNp4hq5bGLWVwXfnoLhodjfZontyqyTLPXX34UhAkZ" alt="Trust The Wolf Logo">
+            <div class="info-box">
+                <p>Home of the Trust The Wolf Tech services page, where you get the help when you need it.</p>
+            </div>
         </div>
 
-        <div class="footer">
-            <p>&copy; 2025 <a href="https://trustthewolf.com">trustthewolf.com</a></p>
+        <div class="half right">
+            <h1>Trust The Wolf Meme Coin ($TWOLF)</h1>
+            <img src="https://gateway.irys.xyz/CM5NYjHVwXqJ1vFGUP3g5J3EP4KkqhvQayKPFoKXpuAB" alt="$TWOLF Logo">
+            <div class="info-box">
+                <p><strong>$TWOLF</strong> is your digital brotherhood — for the ones who knew what a jumper pin was, who coded in hex, and kept the world running behind the scenes. Not trendy. Not shiny. Just wise, capable, and ready for anything.</p>
+                <p><strong>Mint:</strong><br>
+                    <a href="https://explorer.solana.com/address/qdvrrpPCjbZoHi4PFrq1z1v16bbYjpzH8Fudzg9iYZq" target="_blank">
+                        qdvrrpPCjbZoHi4PFrq1z1v16bbYjpzH8Fudzg9iYZq
+                    </a>
+                </p>
+                <p><strong>Supply:</strong> 333,000,000 TWOLF</p>
+                <p><strong>Decimals:</strong> 6</p>
+                <p><strong>Transfer Fee:</strong> 0.33% (100% to creator)</p>
+            </div>
         </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 <a href="https://trustthewolf.com">trustthewolf.com</a></p>
     </div>
 </body>
 </html>
